@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="20dp">
 
     <TextView
@@ -14,7 +14,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Name" />
+        android:text="Name" />
 
     <TextView
         android:id="@+id/buy"
@@ -24,7 +24,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        tools:text="Buy" />
+        android:text="Buy" />
 
     <TextView
         android:id="@+id/sale"
@@ -34,7 +34,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buy"
-        tools:text="Sale" />
+        android:text="Sale" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"

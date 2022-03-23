@@ -1,6 +1,7 @@
 package com.example.currencyrate.screens.start
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,8 +37,9 @@ class StartAdapter : RecyclerView.Adapter<StartAdapter.StartViewHolder>() {
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setData(list : List<StartModelItem>){
+    fun setData(list: List<StartModelItem>) {
         this.list = list
         notifyDataSetChanged()
+        Log.e("adapter",list.size.toString())
     }
 }
